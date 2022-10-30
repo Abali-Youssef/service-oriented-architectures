@@ -1,0 +1,13 @@
+package org.projet;
+
+import jakarta.xml.ws.Endpoint;
+import org.projet.ws.BanqueService;
+
+public class ServerJWS {
+    public static void main(String[] args) {
+
+
+        Endpoint.publish("http://0.0.0.0:9191/",new BanqueService());
+        System.out.println("W S déploiyé");
+    }
+}
