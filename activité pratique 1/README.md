@@ -1,12 +1,31 @@
-# Architecture distribuée J2EE & Middlewares
 
-## liste des activités pratiques  :
+# Architectures orientées services
+
+## activité pratique  : Mise en oeuvre d'une architecture micro-services
+
+<u> enoncé </u> :
+
+```
+Suivre les vidéos Bonnes pratiques de Architectures micro-services :
+1. Vidéo 1 : Concepts de bases
+2.  Vidéo 2 à 5 : Mise en oeuvre d'une application distribuée basée sur deux micro-services en utilisant les bonnes pratiques  :
+- Couches DA0, Service, Web, DTO
+- Utilisation de MapStruct pour le mapping entre les objet Entities et DTO
+- Génération des API-DOCS en utilisant SWAGGER3 (Open API)
+- Communication entre micro-services en utilisant OpenFeign
+- Spring Cloud Gateway
+- Eureka Discovery Service
+```
+   
+ <u>les parties de l'activité </u>   
+
+| Partie                   | Lien                                            |
+|--------------------------|-------------------------------------------------|
+| Customer-service         | [README.md](openlab-customer-service/README.md) |
+| Billing-service          | [README.md](enset-billing-service/README.md)    |
+| Eureka Discovery Service | [README.md](eureka-service/README.md)           |
+| Gateway                  | [README.md](gateway/README.md)                  |
 
 
 
-| Activité                                                                             | lien                                                                                              |
-|--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| Inversion de contrôle et Injection des dépendances                        | [lien activité 1](seance-1/README.md)                                                             |
-| mapping objet relationnel avec JPA, Hibernate et Spring Data              | lien activité 2 <br/>[- users et roles](user-role/README.md) <br/> [- cabinet](cabinet-spring/README.md) |
-| gestion des patients avec Spring MVC, Thylemeaf et Spring Data JPA        | [lien activité 3](patient/README.md)                                                              |
-| gestion des étudiants avec Spring MVC, Spring Data JPA et Spring Security | [lien activité 4](etudiant/README.md)                                                             |
+

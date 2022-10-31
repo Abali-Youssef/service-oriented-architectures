@@ -21,11 +21,15 @@ public class CustomerRestAPI {
     public List<CustomerResponseDTO> allCustomers(){
         return customerService.listCustomers();
     }
+
+
     @PostMapping (path = "/customers")
     public CustomerResponseDTO save(@RequestBody  CustomerRequestDTO customerRequestDTO){
-        customerRequestDTO.setId(UUID.randomUUID().toString());
+       //customerRequestDTO.setId(UUID.randomUUID().toString());
         return customerService.save(customerRequestDTO);
     }
+
+
     @GetMapping(path = "/customer/{id}")
     public CustomerResponseDTO getCustomer(@PathVariable  String id){
         return customerService.getCustomer(id);

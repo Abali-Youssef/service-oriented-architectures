@@ -1,4 +1,4 @@
-# Architecture orientée service
+# Architectures orientées services
 
 ### Activité Pratique N° 3 : Web services SOAP, WSDL, UDDI avec JAXWS  :
 

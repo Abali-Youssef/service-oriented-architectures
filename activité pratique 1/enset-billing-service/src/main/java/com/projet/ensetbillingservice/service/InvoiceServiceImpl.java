@@ -42,9 +42,6 @@ public class InvoiceServiceImpl implements InvoiceService {
         invoice.setId(UUID.randomUUID().toString());
         invoice.setDate(new Date());
 
-        /*
-        verifier si le client existe
-         */
         Invoice savedInvoice = invoiceRepository.save(invoice);
         invoice.setCustomer(customer);
         return invoiceMapper.fromInvoice(invoice);
