@@ -5,7 +5,7 @@
 
 le proxy généré :
 
-![ les classes et interfaces générées](/proxy.png "c'est les classes généré à partir du WSDL")
+![ les classes et interfaces générées](proxy.PNG "c'est les classes généré à partir du WSDL")
 
 le code du java client soap API :
 
