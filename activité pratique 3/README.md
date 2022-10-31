@@ -20,9 +20,9 @@ Implémentation :
 Test de l'API :
 
 test de la méthode getCompte :
-![ les classes et interfaces générées](/soap test get compte.png "c'est les classes généré à partir du WSDL")
+![ les classes et interfaces générées](/soaptestgetcompte.png "c'est les classes généré à partir du WSDL")
 test de la méthode listeComptes :
-![ les classes et interfaces générées](/all comptes.png "c'est les classes généré à partir du WSDL")
+![ les classes et interfaces générées](/comptes.png "c'est les classes généré à partir du WSDL")
 test de la méthode conversion :
-![ les classes et interfaces générées](/soap test convet.png "c'est les classes généré à partir du WSDL")
+![ les classes et interfaces générées](/soaptestconvet.png "c'est les classes généré à partir du WSDL")
 
