@@ -14,9 +14,6 @@
 | Partie              | Lien                                            |
 |---------------------|-------------------------------------------------|
 | activité pratique 1 | [🔗](e-bank-service) |
-| activité pratique 2 | [🔗](activité pratique 1)    |
-| activité pratique 3 | [🔗](activité pratique 3)           |
-
-
-
+| activité pratique 2 | <a href="activité pratique 1">🔗</a>    |
+| activité pratique 3 | <a href="activité pratique 3">🔗</a>          |
 
