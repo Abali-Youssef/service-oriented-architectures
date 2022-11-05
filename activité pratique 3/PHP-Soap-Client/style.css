@@ -1,0 +1,12 @@
+ul {
+    width: 30%;
+    margin: auto;
+}
+
+
+
+  .inner {
+    margin-top:100px !important ;
+    display: table;
+    margin: 0 auto;
+  }

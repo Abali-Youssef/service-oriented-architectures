@@ -21,10 +21,10 @@ Suivre les vidéos Bonnes pratiques de Architectures micro-services :
 
 | Partie                   | Lien                                            |
 |--------------------------|-------------------------------------------------|
-| Customer-service         | [README.md](openlab-customer-service/README.md) |
-| Billing-service          | [README.md](enset-billing-service/README.md)    |
-| Eureka Discovery Service | [README.md](eureka-service/README.md)           |
-| Gateway                  | [README.md](gateway/README.md)                  |
+| Customer-service         | [🔗](openlab-customer-service) |
+| Billing-service          | [🔗](enset-billing-service)    |
+| Eureka Discovery Service | [🔗](eureka-service)           |
+| Gateway                  | [🔗](gateway)                  |
 
 
 

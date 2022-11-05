@@ -22,7 +22,10 @@ public class BanqueService {
         return List.of(
         new Compte(1,Math.random()*9888,new Date()),
         new Compte(2,Math.random()*9888,new Date()),
-        new Compte(3,Math.random()*9888,new Date())
+        new Compte(3,Math.random()*9888,new Date()),
+        new Compte(4,Math.random()*9888,new Date()),
+        new Compte(5,Math.random()*9888,new Date()),
+        new Compte(6,Math.random()*9888,new Date())
         );
     }
 }

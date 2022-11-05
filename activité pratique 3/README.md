@@ -14,8 +14,9 @@ Enoncé :
 
 Implémentation :
 
-[SOAP-WSDL-UDDI](SOAP-WSDL-UDDI/README.md) </br>
-[CLIENT-SOAP-JAVA](client-soap-java/README.md)
+[🔗 SOAP-WSDL-UDDI](SOAP-WSDL-UDDI) </br>
+[🔗 CLIENT-SOAP-JAVA](client-soap-java) </br>
+[🔗 CLIENT-SOAP-PHP](PHP-Soap-Client)
 
 Test de l'API :
 
