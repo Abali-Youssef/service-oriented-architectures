@@ -6,5 +6,7 @@ import com.example.ebankservice.dto.BankAccountResponseDTO;
 
 public interface AccountService {
     public BankAccountResponseDTO addAccount(BankAccountRequestDTO bankAccountRequestDTO);
-    public BankAccountResponseDTO updateAccount(BankAccountReqDTO bankAccountReqDTO);
-}
+    //public BankAccountResponseDTO updateAccount(BankAccountReqDTO bankAccountReqDTO);
+    public BankAccountResponseDTO updateAccount(String id, BankAccountRequestDTO bankAccountRequestDTO) ;
+
+    }

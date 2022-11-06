@@ -20,7 +20,7 @@ import java.util.UUID;
 @Service
 @Transactional
 @AllArgsConstructor
-public class AccountServiceImpl implements AccountService {
+class AccountServiceImpl implements AccountService {
     private BankAccountRepository bankAccountRepository;
     private AccountMapper accountMapper ;
 
@@ -35,17 +35,19 @@ public class AccountServiceImpl implements AccountService {
         bankAccountResponseDTO= accountMapper.fromBankAccount(savedBankAccount);
         return  bankAccountResponseDTO;
     }
-    public BankAccountResponseDTO updateAccount(BankAccountReqDTO bankAccountReqDTO) {
-        BankAccount bankAccount = new BankAccount();
-        System.out.println("=>>>>>>><mapping 1<<>>>>"+bankAccount.getBalance());
 
-        bankAccount = accountMapper.fromBankAccountReqDTO(bankAccountReqDTO);
-        System.out.println("=>>>>>>><before save<<>>>>"+bankAccount.getBalance());
+
+    @Override
+    public BankAccountResponseDTO updateAccount(String id, BankAccountRequestDTO bankAccountRequestDTO) {
+        BankAccount bankAccount = new BankAccount();
+        bankAccount = accountMapper.fromBankAccountRequestDTO(bankAccountRequestDTO);
 
         BankAccount updatedBankAccount = bankAccountRepository.save(bankAccount);
-        System.out.println("=>>>>>>><after save<<>>>>"+bankAccount.getBalance());
         BankAccountResponseDTO bankAccountResponseDTO =  new BankAccountResponseDTO();
         bankAccountResponseDTO= accountMapper.fromBankAccount(updatedBankAccount);
         return  bankAccountResponseDTO;
+
     }
+
+
 }

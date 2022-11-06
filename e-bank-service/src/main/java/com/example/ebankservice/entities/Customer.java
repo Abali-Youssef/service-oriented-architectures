@@ -7,19 +7,18 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.Date;
+
+import java.util.List;
+
 @Entity
 @Data
 @NoArgsConstructor @AllArgsConstructor @Builder
-public class BankAccount {
-    @Id
-    private String id;
-    private Date createdAt ;
-    private Double balance ;
-    private String currency ;
-    @Enumerated(EnumType.STRING)
-    private AccountType type;
-    @ManyToOne
-    private Customer customer;
+public class Customer {
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name ;
+    @OneToMany(mappedBy = "customer")
+    private List<BankAccount> bankAccounts ;
 
 }

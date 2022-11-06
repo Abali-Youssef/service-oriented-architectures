@@ -36,8 +36,8 @@ public class AccountRestController {
     }
 
     @PostMapping("/bankaccounts/{id}")
-    public  BankAccountResponseDTO update (@PathVariable String id ,@RequestBody BankAccountReqDTO bankAccount){
-       return  accountService.updateAccount(bankAccount);
+    public  BankAccountResponseDTO update (@PathVariable String id ,@RequestBody BankAccountRequestDTO bankAccount){
+       return  accountService.updateAccount(id,bankAccount);
     }
     @DeleteMapping("/bankaccounts/{id}")
     public  void delete (@PathVariable String id){
