@@ -1,11 +1,19 @@
 type Query {
 comptes : [CompteResponseDTO]
 getCompte(id:Int) : CompteResponseDTO
-
 }
 
 type CompteResponseDTO {
 code:ID,
 dateCreation : String,
+solde: Float
+}
+type Mutation {
+addCompte(compteRequestDTO : CompteRequestDTO) :CompteResponseDTO,
+updateCompte(code:Int, compteRequestDTO : CompteRequestDTO) :CompteResponseDTO,
+deleteCompte(id:Int) : Boolean
+}
+
+input CompteRequestDTO {
 solde: Float
 }

@@ -12,4 +12,5 @@ public interface CompteService {
 
     public CompteResponseDTO getCompte (Long id);
 
+    public CompteResponseDTO update(Long code,CompteRequestDTO compteRequestDTO);
 }
