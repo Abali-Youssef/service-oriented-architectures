@@ -10,6 +10,20 @@ import java.util.List;
 
 @Controller
 public class CompteGraphQLController {
-    
+    private CompteRepository compteRepository;
+    private CompteService compteService;
+
+    public CompteGraphQLController(CompteRepository compteRepository, CompteService compteService) {
+        this.compteRepository = compteRepository;
+        this.compteService = compteService;
+    }
+    @QueryMapping
+    public List<CompteResponseDTO> comptes(){
+        return compteService.listComptes();
+    }
+    @QueryMapping
+    public CompteResponseDTO getCompte(Long id){
+        return compteService.getCompte(id);
+    }
 
 }

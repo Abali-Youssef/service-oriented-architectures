@@ -1,0 +1,11 @@
+type Query {
+comptes : [CompteResponseDTO]
+getCompte(id:Int) : CompteResponseDTO
+
+}
+
+type CompteResponseDTO {
+code:ID,
+dateCreation : String,
+solde: Float
+}
