@@ -35,15 +35,13 @@ public class CompteGraphQLController {
     public boolean deleteCompte(@Argument Long id ){
         compteRepository.deleteById(id);
         return true;
-}
+    }
     @MutationMapping
     public CompteResponseDTO addCompte(@Argument CompteRequestDTO compteRequestDTO){
         return compteMapper.compteToCompteResponseDTO(compteMapper.compteResponseDTOToCompte(compteService.save(compteRequestDTO)));
     }
-
     @MutationMapping
     public CompteResponseDTO updateCompte(@Argument Long code,@Argument CompteRequestDTO compteRequestDTO){
         return compteService.update(code,compteRequestDTO);
     }
-
 }

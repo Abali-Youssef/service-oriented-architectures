@@ -6,6 +6,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.remoting.jaxws.SimpleJaxWsServiceExporter;
 
 @SpringBootApplication
 public class CompteMultiConnecteursApplication {
@@ -20,5 +21,14 @@ public class CompteMultiConnecteursApplication {
 			compteService.save(new CompteRequestDTO(200));
 			compteService.save(new CompteRequestDTO(300));
 		};
+	}
+	@Bean
+	SimpleJaxWsServiceExporter serviceExporter() {
+		SimpleJaxWsServiceExporter simpleJaxWsServiceExporter = new SimpleJaxWsServiceExporter();
+
+		simpleJaxWsServiceExporter.setBaseAddress("http://localhost:8088/");
+
+		System.out.println("server started");
+		return simpleJaxWsServiceExporter;
 	}
 }
