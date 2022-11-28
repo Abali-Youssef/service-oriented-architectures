@@ -20,15 +20,15 @@ public class CustomerServiceApplication {
 		return args -> {
 			customerRepository.saveAll(List.of(
 					Customer.builder()
-							.nom("youssef")
+							.name("youssef")
 							.email("youssef@youss.com")
 							.build(),
 					Customer.builder()
-							.nom("abali")
+							.name("abali")
 							.email("abali@youss.com")
 							.build(),
 					Customer.builder()
-							.nom("ali")
+							.name("ali")
 							.email("ali@youss.com")
 							.build()
 			));
