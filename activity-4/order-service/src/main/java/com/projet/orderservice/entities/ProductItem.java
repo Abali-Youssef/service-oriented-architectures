@@ -1,5 +1,6 @@
 package com.projet.orderservice.entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.projet.orderservice.model.Product;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -23,5 +24,6 @@ public class ProductItem {
     private int quantity;
     private double discount;
     @ManyToOne
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Order order;
 }
